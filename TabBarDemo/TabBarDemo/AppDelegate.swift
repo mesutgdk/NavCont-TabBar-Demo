@@ -31,10 +31,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let nc3 = UINavigationController(rootViewController: vc3)
         
         let tabBarController = UITabBarController()
+        tabBarController.tabBar.tintColor = .black
+
         tabBarController.viewControllers = [nc1, nc2, nc3]
         
         window?.rootViewController = tabBarController
-        tabBarController.tabBar.barTintColor = .white
         
         return true
     }
